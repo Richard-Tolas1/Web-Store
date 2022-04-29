@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="G%20STORES%20LOGIN%20PAGE.css">
+  </head>
+  <body>
+      <div class="container">
+         <div class="navbar">
+        <div class="Logo">
+            <img src="images/G%20STORES%20MAIN%20LOGO.png" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="G%20STORES.html">Home</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="G%20STORES%20LOGIN%20PAGE.html">Account</a></li>
+            </ul>
+        </nav>
+        <img src="images/cart%20icon.jpg" width="30px" height="30px">
+              <img src="images/%20menu%20icon.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+      
+</div>
+      
+<div class="form-login">
+  <h1>Login</h1>
+  <div class="field input">
+    <i class="fas fa-user"></i>
+    <input type="text" placeholder="Username">
+  </div>
+
+  <div class="field input">
+    <i class="fas fa-lock"></i>
+    <input type="password" placeholder="Password" id="password">
+      <span><i class="fa fa-eye" id="eye" onclick="toggle()"></i></span>
+  </div>
+
+  <input type="button" class="btn" value="Sign in">
+</div>
+      
+      
+  </body>
+    <script>
+        var state= false;
+        function toggle(){
+            if(state){
+                document.getElementById("password").setAttribute("type", "password");
+                document.getElementById("eye").style.color = ''
+                state = false;
+            }
+            else{
+                  document.getElementById("password").setAttribute("type", "text");
+                document.getElementById("eye").style.color = '#5887ef'
+                state = true;
+            }
+        }
+    </script>
+</html>
